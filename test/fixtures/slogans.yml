@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  first_name: MyString
-  last_name: MyString
-  email: MyString
-  description: MyString
+  first_name: Rachel
+  last_name: Greene
+  email: rach.g@test.com
+  description: lorem ipsum
 
 two:
-  first_name: MyString
-  last_name: MyString
-  email: MyString
-  description: MyString
+  first_name: Jake
+  last_name: Adams
+  email: j.23@test.ca
+  description: lorem ipsum
