@@ -1,5 +1,8 @@
 require 'test_helper'
 
+# $ rails test test/controllers/api/v1/slogans_controller_test.rb
+
+
 class Api::V1::SlogansControllerTest < ActionDispatch::IntegrationTest
   setup do
     @slogan = slogans(:one)

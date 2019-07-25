@@ -1,5 +1,7 @@
 require 'test_helper'
 
+ # $ rails test test/models/slogan_test.rb
+ 
 class SloganTest < ActiveSupport::TestCase
   test 'valid slogan' do
     slogan = Slogan.new(first_name: 'John', last_name:'Doe', email: 'john@example.com', description:'lorem ipsum')
@@ -20,8 +22,8 @@ class SloganTest < ActiveSupport::TestCase
 
   test 'invalid without email' do
     slogan = Slogan.new(first_name: 'John', last_name:'Doe', description:'lorem ipsum')
-    refute slogan.valid?
-    assert_not_nil slogan.errors[:email]
+    refute slogan.valid?, 'slogan is valid without an email'
+    assert_not_nil slogan.errors[:email], 'no validation error for email present'
   end
 
   test 'invalid without description' do
